@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/qr_recent_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="116dp"
+    android:layout_margin="4dp"
+    android:foreground="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/qr_recent_imageview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <TextView
+            android:id="@+id/qr_recent_filename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/qr_recent_imageview"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="20160220_102293.png"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <TextView
+            android:id="@+id/qr_recent_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/qr_recent_imageview"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/qr_recent_filename"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@id/qr_recent_imageview"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="내용"
+            android:transitionName="content" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
